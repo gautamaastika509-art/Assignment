@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML — Overview</title>
+  <link rel="stylesheet" href="all_style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="brand">HTML 102</a>
+      <nav aria-label="Primary">
+        <ul class="menu">
+          <li><a href="#what">What is HTML?</a></li>
+          <li><a href="#Versions">Versions</a></li>
+          <li><a href="#tech">Language used in HTML</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="hero container">
+      <h1>HTML</h1>
+      <p>
+        "Welcome! This is your gateway to learning <strong>HTML</strong> with clear examples and hands-on practice. Ready to start building?"
+      </p>
+      <div class="cta">
+        <a class="btn" href="#what">Learn more ↓</a>
+      </div>
+    </section>
+  </header>
+
+  <main id="main">
+    <!-- WHAT -->
+    <section id="what" class="section container">
+      <h2>What is HTML?</h2>
+      <p>
+        HTML (Hypertext Markup Language), is the authoring language used to create documents on the World Wide Web. It was initially designed to publish documents similarly to a journal of articles. HTML defines the structure and layout of a web document using a variety of tags and attributes. Web browsers read HTML files and transform these tags into visible web pages by interpreting the content and presentation. HTML is a markup language rather than a programming language because it semantically structures content (like headings, paragraphs, lists, and links) and provides presentation hints. With HTML, images and objects can be embedded, and interactive forms can be created to post data back to the server.(Carter, 2014)
+       HTML acts like the blueprint of the internet, providing a framework to structure and showcase content on web pages. It is composed of various tags that serve as building blocks, allowing developers to arrange content elements such as headings, paragraphs, lists, links, and multimedia in a logical hierarchy. 
+
+      </p>
+      <p>
+        The root element in an HTML document is the <html> tag, which branches into the <head> and <body> sections, forming a tree-like structure.HTML defines the document’s structure and creates the essential scaffolding upon which the entire web experience is built. It aids in organizing content logically, supports semantic representation, and ensures accessibility.
+      </p>
+    </section>
+
+    <!-- Versions -->
+    <section id="Versions" class="section container">
+      <h2>Versions of HTML</h2>
+
+      <details class="accordion" open>
+        <summary>HTML 1.0</summary>
+        <div class="body">
+          The very first version of HTML, created in the early 1990s. It was quite basic, mainly for structuring simple documents with headings, paragraphs, links, and images. It laid the foundation for the web but had limited functionality.
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>HTML 2.0</summary>
+        <div class="body">
+          This was a more standardized version released in 1995. It included everything from HTML 1.0 plus additional elements like forms, tables, and basic multimedia support, making web pages more interactive. 
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>HTML 3.2</summary>
+        <div class="body">
+          Released in 1997, HTML 3.2 introduced more presentational elements such as applets, scripting, and more control over layout (e.g., tables for page design). This version aimed to support richer content but sometimes led to inconsistent designs because of browser differences.
+        </div>
+      </details>
+    </section>
+
+    <!-- language used -->
+    <section id="tech" class="section container">
+      <h2>Language used</h2>
+      <p>
+        HTML itself is a markup language rather than a traditional programming language. 
+      </p>
+
+      <ul class="cards">
+        <li class="card">
+          <h3>CSS</h3>
+          <p>Styles the content—colors, spacing, responsive layouts, visuals.</p>
+          <code>style.css</code>
+        </li>
+        <li class="card">
+          <h3>JavaScript</h3>
+          <p>Adds interactivity and dynamic behavior to pages.</p>
+          <code>script.js</code>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Full-Stack 101 • Orange &amp; White Theme</p>
+      <a href="#" class="top" aria-label="Back to top">↑ Top</a>
+    </div>
+    <a href="index.html" class="back-link">Back to Home</a>
+  </footer>
+  <script src="all_script.js" defer></script>
+</body>
+</html>

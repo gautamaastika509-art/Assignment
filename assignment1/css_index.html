@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS — Overview</title>
+  <link rel="stylesheet" href="all_style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="brand">CSS 103</a>
+      <nav aria-label="Primary">
+        <ul class="menu">
+          <li><a href="#what">CSS</a></li>
+          <li><a href="#Types">Types</a></li>
+          <li><a href="#Layouts">Layouts</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="hero container">
+      <h1>CSS</h1>
+      <p>
+        “Hello, stylist! Give your pages personality with <strong>CSS</strong> — try a demo and see the glow.”
+      </p>
+      <div class="cta">
+        <a class="btn" href="#what">Learn more ↓</a>
+      </div>
+    </section>
+  </header>
+
+  <main id="main">
+    <!-- WHAT -->
+    <section id="what" class="section container">
+      <h2>What is CSS?</h2>
+      <p>
+        CSS is a style sheet language used to define the visual presentation of web pages. It works alongside HTML, which structures the content, by allowing developers to control the layout, colors, fonts, spacing, and other stylistic elements to create visually engaging and consistent designs. CSS separates content from presentation, making it easier to maintain and update websites efficiently. It provides a range of properties and selectors that can be applied to HTML elements to tailor their appearance across multiple pages or devices, supporting responsive and accessible web design.
+      </p>
+      <p>
+        CSS originated as a solution to add a design layer to HTML documents, aiming for wide accessibility while offering precise visual control. Over time, it has become the mainstream standard for web design, evolving through continuous development and negotiation within the web community. Innovations such as media queries and browser-specific hacks have enabled CSS to adapt to different browsers and devices, promoting responsive and flexible designs.
+      </p>
+    </section>
+
+    <!-- BENEFITS -->
+    <section id="Types" class="section container">
+      <h2>Types of CSS</h2>
+
+      <details class="accordion" open>
+        <summary>Inline CSS</summary>
+        <div class="body">
+          Inline CSS is a method of applying CSS styles directly to an individual HTML element using the style attribute within the opening tag of that element. It allows you to specify CSS properties and their values directly where the element is defined in the HTML code. 
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>Internal CSS</summary>
+        <div class="body">
+          Internal CSS is a way to add styles directly within an HTML document by placing CSS code.
+
+
+      </details>
+
+      <details class="accordion">
+        <summary>External CSS</summary>
+        <div class="body">
+          With system-wide understanding, full-stack developers spot bottlenecks across layers,
+          switch context as needed, and help during incidents by working on whichever layer is
+          blocking progress.
+        </div>
+      </details>
+     </section>
+     <!-- layouts -->
+     <section id="tech" class="section container">
+      <h2>Layouts used</h2>
+      <p>
+                Layout techniques in web design refer to the various methods and approaches used to arrange and organize elements on a web page.
+      </p>
+     <p>
+        CSS layout defines how elements are arranged and displayed on a web page—controlling their size, position, and relationships within the browser viewport. At its core is the box model, which treats each element as a rectangle composed of four layers: content, padding, border, and margin—each layer affecting the element’s overall dimensions and spacing.   For positioning, CSS offers properties like static, relative, absolute, fixed, and sticky, enabling elements to be placed precisely either within the normal flow or relative to a container or the viewport.As for layout models, the normal flow lays out elements sequentially as they appear in the HTML. The float property allows elements to be taken out of this flow and positioned to one side—letting text and other inline content wrap around them.More robust models include Flexbox, a one-dimensional layout mode that dynamically arranges items in a row or column with powerful control over alignment and distribution, and CSS Grid, a two-dimensional system designed to organize content into rows and columns, offering precise control over placement within a grid structure.
+     </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Full-Stack 101 • Orange &amp; White Theme</p>
+      <a href="#" class="top" aria-label="Back to top">↑ Top</a>
+    </div>
+    <a href="index.html" class="back-link">Back to Home</a>
+  </footer>
+  <script src="all_script.js" defer></script>
+</body>
+</html>

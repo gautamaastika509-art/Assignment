@@ -1,0 +1,119 @@
+/* Reset some defaults */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orangered; /* Bootstrap primary blue */
+  padding: 15px 40px;
+}
+
+header .logo img {
+  height: 60px;
+  width: auto;
+  border-radius: 8px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ffc107; /* Bootstrap warning yellow */
+}
+
+.card-button{
+  border: 1px solid orangered;
+  text-decoration: none;
+  padding: 5px;
+  background-color: orangered;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Intro Section */
+section.card {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./image/coding.jpeg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 0 20px;
+
+}
+
+section.card h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+section.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Full Stack Image */
+.full-stack {
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* About Section */
+.aboutfullstack {
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.aboutfullstack .serviceheader {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  background-color: #212529; /* Bootstrap dark */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
